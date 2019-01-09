@@ -1,0 +1,12 @@
+<div *ngIf="recipes">
+  <div class="d-flex" @explainerAnim>
+    <div *ngFor="let recipe of recipes; let i = index">
+      <div [class]="'col' + (i % 4) + ' col'">
+        <app-recipe-detail
+          [recipe]="recipe"
+          (deleteRecipe)="handleDelete($event)"
+        ></app-recipe-detail>
+      </div>
+    </div>
+  </div>
+</div>

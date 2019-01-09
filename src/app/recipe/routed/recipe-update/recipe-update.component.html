@@ -1,0 +1,16 @@
+<div class="example-container">
+  <form [formGroup]="recipeForm" (submit)="handleUpdate()">
+    <mat-form-field>
+     <input matInput type="text" placeholder="recipe.name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field>
+     <input matInput type="text" placeholder="recipe.picture" formControlName="picture" />
+    </mat-form-field>
+    <mat-form-field>
+     <input matInput type="text" placeholder="recipe.description" formControlName="description" />
+    </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">
+        Update
+      </button>
+  </form>
+</div>

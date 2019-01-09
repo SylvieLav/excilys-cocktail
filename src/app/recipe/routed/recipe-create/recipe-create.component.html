@@ -1,0 +1,14 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput [(ngModel)]="recipe.name" placeholder="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="recipe.picture" placeholder="picture" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="recipe.description" placeholder="description"/>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="handlePostRecipe()">
+    Create
+  </button>
+</div>
